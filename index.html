@@ -49,7 +49,6 @@
                 Differentiable Simulation, 3D-aware Representation Learning,
                 and the intersection between Robotics and Language.
               </p>
-                <!-- <p>I am a Ph.D. student at <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>. Currently, I am a member of <a href="https://www.mvig.org/">Machine Vision and Intelligence Group (MVIG)</a> under the supervision of <a href="https://www.mvig.org/">Prof. Cewu Lu</a>. I also worked closely with <a href="https://linsats.github.io/">Prof. Lin Shao</a> on my projects. I received my Bachelor's degree from the <a href="https://infosec.sjtu.edu.cn/">School of Cyber Science and Engineering</a>, Shanghai Jiao Tong University in 2020. My research interests include Robotics, Artificial Intelligence and Computer Vision.</p> -->
 
 						<p align="center"><a href="mailto:zhaosh@smail.nju.edu.cn">Email</a> &nbsp;/&nbsp; 
               <a href="https://github.com/Hilbert-Johnson"> Github </a> &nbsp;/&nbsp; 
@@ -75,35 +74,73 @@
 
 			<table align="center" border="0" cellpadding="20" cellspacing="0" width="100%">
 				<tbody>
+          <!-- diffAI -->
+          <tr onmouseout="diffai_stop()" onmouseover="diffai_start()">
+						<td width="30%">
+						<div class="one">
+            <div class="two" id="diffai"><img src="images/teaser_final.png" style="width: 210px;" /></div>
+            <img src="images/teaser_final.png" style="width: 210px;" /></div>
+						<script type="text/javascript">
 
+              function diffai_start() {
+                document.getElementById('diffai').style.opacity = "1";
+                }
+                function diffai_stop() {
+                document.getElementById('diffai').style.opacity = "0";
+                }
+                diffai_stop()
+       
+            </script></td>
+              <td valign="top" width="75%"><papertitle>		
+              DiffClothAI: Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Coupling with Articulated Rigid Bodies</papertitle><br />
+              <br />Xinyuan Yu, <strong>Siheng Zhao</strong>, Siyuan Luo, Gang Yang, Lin Shao<br />
+              <em>In submission: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2023</em>
+              <p><a href="https://hilbert-johnson.github.io/">[arxiv]</a> <a href="https://sites.google.com/view/diffsimcloth">[project]</a> <a href="https://hilbert-johnson.github.io/">[video]</a></p>
+              <p></p>
+              </td>
+        </tr>
+          
+          <!-- knotbot -->
 					<tr onmouseout="artiboost_stop()" onmouseover="artiboost_start()">
 						<td width="30%">
 						<div class="one">
 						
 						<script type="text/javascript">
         
-        </script></td>
-						<td valign="top" width="75%"><papertitle>KnotBot: Model-based Learning to Knot a Tie from Visual Demonstration with Differentiable Physics-based Simulation</papertitle><br />
-						<em>Draft, 2023</em>
-						<p></p>
-						</td>
+            </script></td>
+              <td valign="top" width="75%"><papertitle>KnotBot: Model-based Learning to Knot a Tie from Visual Demonstration with Differentiable Physics-based Simulation</papertitle><br />
+              <em>Draft, 2023</em>
+              <p><a href="https://hilbert-johnson.github.io/">[arxiv]</a> <a href="https://sites.google.com/view/knotbot">[project]</a> <a href="https://hilbert-johnson.github.io/">[video]</a></p>
+              <p></p>
+              </td>
           </tr>		
-          
 
-          <tr onmouseout="sgci_stop()" onmouseover="sgci_start()">
+        <!-- clothnet -->
+        <tr onmouseout="clothnet_stop()" onmouseover="clothnet_start()">
 						<td width="30%">
 						<div class="one">
-						
+            <div class="two" id="clothnet"><img src="images/dataset.png" style="width: 210px;" /></div>
+            <img src="images/dataset.png" style="width: 210px;" /></div>
 						<script type="text/javascript">
+
+              function clothnet_start() {
+                document.getElementById('clothnet').style.opacity = "1";
+                }
+                function clothnet_stop() {
+                document.getElementById('clothnet').style.opacity = "0";
+                }
+                clothnet_stop()
        
-        </script></td>
-						<td valign="top" width="75%"><papertitle>	ClothesNet: A Simulated Clothes Manipulation Environment with 3D Model Repository</papertitle><br />
-						<em>Draft, 2023</em>
-						<p></p>
-						</td>
-          </tr>
+            </script></td>
+              <td valign="top" width="75%"><papertitle>	ClothesNet: A Simulated Clothes Manipulation Environment with 3D Model Repository</papertitle><br />
+              <em>Draft, 2023</em>
+              <p><a href="https://hilbert-johnson.github.io/">[arxiv]</a> <a href="https://hilbert-johnson.github.io/">[project]</a> <a href="https://hilbert-johnson.github.io/">[video]</a></p>
+              <p></p>
+              </td>
+        </tr>
 	
-            <tr onmouseout="knnbox_stop()" onmouseover="knnbox_start()">
+          <!-- knn-box -->
+          <tr onmouseout="knnbox_stop()" onmouseover="knnbox_start()">
               <td width="30%">
               <div class="one">
               <div class="two" id="knnbox"><img src="images/knnbox.png" style="width: 210px;" /></div>
@@ -124,9 +161,10 @@
   
               <p></p>
               </td>
-            </tr>		
+          </tr>		
 
-            <tr onmouseout="knnds_stop()" onmouseover="knnds_start()">
+          <!-- knn select -->
+          <tr onmouseout="knnds_stop()" onmouseover="knnds_start()">
               <td width="30%">
               <div class="one">
               <div class="two" id="knnds"><img src="images/knnds.png" style="width: 210px;" /></div>
@@ -150,6 +188,7 @@
 				</tbody>
 			</table>
 
+      <!-- page click number -->
 			<br/>
       <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fhilbert-johnson.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=influxdb.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
 			<table align="center" border="0" cellpadding="20" cellspacing="0" width="800">
@@ -161,7 +200,7 @@
 					</tr>
 				</tbody>
 			</table>
-      <!-- <img src="images/franka.png" style="height: 12px;" /> -->
+
 			</td>
 		</tr>
 	</tbody>
