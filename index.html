@@ -37,14 +37,18 @@
                 <name>Siheng Zhao</name>
               </p>
               <p> 
-                Greetings! I'm a Junior now at School of Artificial Intelligence, Nanjing University. Nowadays I work as Research Assistant at <a href="https://hkunlp.github.io/">HKU NLP Group</a> with <a href="https://taoyds.github.io/">Prof. Tao Yu</a>.
+                Greetings! I'm a Senior student at School of Artificial Intelligence, Nanjing University. Nowadays I work as Research Assistant at <a href="https://hkunlp.github.io/">HKU NLP Group</a> with <a href="https://taoyds.github.io/">Prof. Tao Yu</a>.
               </p>
               <p> 
                 Previously, I was a visiting student at <a href="https://www.comp.nus.edu.sg/cs/">Department of Computer Science, National University of Singapore</a>, where I'm honoured to work with <a href="https://linsats.github.io/">Prof. Lin Shao</a>. 
                 I was also an Intern at <a href="http://nlp.nju.edu.cn/homepage/">NJU NLP Group</a>, advised by <a href="http://nlp.nju.edu.cn/huangsj/">Prof. Shu-Jian Huang</a>.
               </p>
               <p> 
-                My research interest now mainly lies at Language Grounding to Robotics and Vision, Large Language Model as Agent and Robot Learning.
+                My research interests now lie at the intersection of natural language processing and reinforcement learning. 
+                My long-term goal is to develop a language-centric agent that can interact with the physical world (Robot Agent), browse websites (Web Agent), play video games (Game Agent) and process data (Data Agent). 
+              </p>
+              <p>
+                My previous focus was on Robot Agent and especially on high-dimensional deformable cloth simulation, manipulation, and perception.
               </p>
 
 						<p align="center"><a href="mailto:zhaosh@smail.nju.edu.cn">Email</a> &nbsp;/&nbsp; 
@@ -71,47 +75,76 @@
 
 			<table align="center" border="0" cellpadding="20" cellspacing="0" width="100%">
 				<tbody>
+          <!-- tiebot -->
+          <tr onmouseout="tiebot_stop()" onmouseover="tiebot_start()">
+						<td width="30%">
+              <div class="one">
+                <div class="two" id="tiebot">
+                  <img src="images/tiebot.png" style="width: 210px;" />
+                </div>
+                <img src="images/tiebot.png" style="width: 210px;" />
+              </div>
+              <script type="text/javascript">
+
+                function tiebot_start() {
+                  document.getElementById('tiebot').style.opacity = "1";
+                  }
+                  function tiebot_stop() {
+                  document.getElementById('tiebot').style.opacity = "0";
+                  }
+                  tiebot_stop()
+              </script>
+            </td>
+
+            <td valign="top" width="75%">
+              <papertitle>		
+                TieBot: Model-based Learning to Knot a Tie from Visual Demonstration via Differentiable Physics-based Simulation
+              </papertitle>
+              <br/>
+              Weikun Peng, Jun Lv, Haonan Chen, <strong>Siheng Zhao</strong>, Jichen Sun, Cewu Lu, Lin Shao
+              <br/>
+              <em>In submission: International Conference on Robotics and Automation (<strong>ICRA</strong>) 2024</em>
+              <p><a href="https://sites.google.com/view/tiebot">[arxiv]</a> <a href="https://sites.google.com/view/tiebot">[project]</a> <a href="https://sites.google.com/view/tiebot">[video]</a></p>
+              <p></p>
+            </td>
+          </tr>
+          
           <!-- diffAI -->
           <tr onmouseout="diffai_stop()" onmouseover="diffai_start()">
 						<td width="30%">
-						<div class="one">
-            <div class="two" id="diffai"><img src="images/diffclothai.png" style="width: 210px;" /></div>
-            <img src="images/diffclothai.png" style="width: 210px;" /></div>
-						<script type="text/javascript">
+              <div class="one">
+                <div class="two" id="diffai">
+                  <img src="images/diffclothai.png" style="width: 210px;" />
+                </div>
+                <img src="images/diffclothai.png" style="width: 210px;" />
+              </div>
+              <script type="text/javascript">
 
-              function diffai_start() {
-                document.getElementById('diffai').style.opacity = "1";
-                }
-                function diffai_stop() {
-                document.getElementById('diffai').style.opacity = "0";
-                }
-                diffai_stop()
-       
-            </script></td>
-              <td valign="top" width="75%"><papertitle>		
-              DiffClothAI: Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Two-Way Coupling with Articulated Rigid Bodies</papertitle><br />
-              Xinyuan Yu*, <strong>Siheng Zhao*</strong>, Siyuan Luo, Gang Yang, Lin Shao<br />
+                function diffai_start() {
+                  document.getElementById('diffai').style.opacity = "1";
+                  }
+                  function diffai_stop() {
+                  document.getElementById('diffai').style.opacity = "0";
+                  }
+                  diffai_stop()
+              </script>
+            </td>
+
+            <td valign="top" width="75%">
+              <papertitle>		
+                DiffClothAI: Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Two-Way Coupling with Articulated Rigid Bodies
+              </papertitle>
+              <br/>
+              Xinyuan Yu*, <strong>Siheng Zhao*</strong>, Siyuan Luo, Gang Yang, Lin Shao
+              <br/>
               <em>International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2023</em>
-              <p><a href="https://sites.google.com/view/diffsimcloth">[arxiv]</a> <a href="https://sites.google.com/view/diffsimcloth">[project]</a> <a href="https://sites.google.com/view/diffsimcloth">[video]</a></p>
+              <p>
+                <a href="https://sites.google.com/view/diffsimcloth">[arxiv]</a> 
+                <a href="https://sites.google.com/view/diffsimcloth">[project]</a> 
+                <a href="https://sites.google.com/view/diffsimcloth">[video]</a></p>
               <p></p>
-              </td>
-        </tr>
-          
-          <!-- knotbot -->
-          
-					<!-- <tr onmouseout="artiboost_stop()" onmouseover="artiboost_start()">
-						<td width="30%">
-						<div class="one">
-						
-						<script type="text/javascript">
-        
-            </script></td>
-              <td valign="top" width="75%"><papertitle>KnotBot: Model-based Learning to Knot a Tie from Visual Demonstration with Differentiable Physics-based Simulation</papertitle><br />
-              <em>Draft, 2023</em>
-              <p><a href="https://sites.google.com/view/knotbot">[project]</a></p>
-              <p></p>
-              </td>
-          </tr>		 -->
+            </td>
+          </tr>
 
         <!-- clothnet -->
         <tr onmouseout="clothnet_stop()" onmouseover="clothnet_start()">
@@ -165,28 +198,6 @@
               <p></p>
               </td>
           </tr>		
-
-          <!-- knn select -->
-          <!-- <tr onmouseout="knnds_stop()" onmouseover="knnds_start()">
-              <td width="30%">
-              <div class="one">
-              <div class="two" id="knnds"><img src="images/knnds.png" style="width: 210px;" /></div>
-              <img src="images/knnds.png" style="width: 210px;" /></div>
-              <script type="text/javascript">
-          function knnds_start() {
-          document.getElementById('knnds').style.opacity = "1";
-          }
-          function knnds_stop() {
-          document.getElementById('knnds').style.opacity = "0";
-          }
-          knnds_stop()
-            </script></td>
-              <td valign="top" width="75%"><papertitle> Nearest Neighbor Data Selection for Domain Adaptation </papertitle>
-              <br /> Wenhao Zhu, Shujian Huang, Xin Zheng, <strong>Siheng Zhao</strong>, Yunzhe Lv, Xinyu Dai, Jiajun Chen<br />
-              <em>In submission, 2022</em>
-              <p></p>
-            </td>
-          </tr> -->
 				</tbody>
 			</table>
 
@@ -201,7 +212,7 @@
       <table width="100%" align="center" border="0" cellpadding="20"><tbody>
         <tr>
          <td>
-            GPA: 95.3/100, Rank: 1/98
+            GPA: 95.3/100, Rank: 1/99
 
         <details>
         <summary>Related A+ courses</summary>
