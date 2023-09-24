@@ -64,6 +64,29 @@
 
 
 			<p></p>
+
+      <style>
+        .button {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            font: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .selected-button {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            font: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+            outline: none;
+            color: #f09228;
+          }
+      </style>
 	
 			<table align="center" border="0" cellpadding="20" cellspacing="0" width="100%">
 				<tbody>
@@ -73,167 +96,286 @@
 				</tbody>
 			</table>
 
-			<table align="center" border="0" cellpadding="20" cellspacing="0" width="100%">
-				<tbody>
-          <!-- text2reward -->
-          <tr onmouseout="text2reward_stop()" onmouseover="text2reward_start()">
-						<td width="30%">
-              <div class="one">
-                <div class="two" id="text2reward">
+      <p>
+        &nbsp &nbsp &nbsp &nbsp <button class="button selected-button" id="button1" onclick="showSelectedPublications(); selectButton('button1')"> Selected Papers</button> /
+        <button class="button" id="button2" onclick="showFullPublications(); selectButton('button2')">Full Papers by Year</button>
+      </p>
+
+      <div id="selected_publications">
+        <table align="center" border="0" cellpadding="20" cellspacing="0" width="100%">
+          <tbody>
+            
+            <!-- text2reward -->
+            <tr onmouseout="text2reward_stop()" onmouseover="text2reward_start()">
+              <td width="30%">
+                <div class="one">
+                  <div class="two" id="text2reward">
+                    <img src="images/text2reward.png" style="width: 210px;" />
+                  </div>
                   <img src="images/text2reward.png" style="width: 210px;" />
                 </div>
-                <img src="images/text2reward.png" style="width: 210px;" />
-              </div>
-              <script type="text/javascript">
-
-                function text2reward_start() {
-                  document.getElementById('text2reward').style.opacity = "1";
-                  }
-                  function text2reward_stop() {
-                  document.getElementById('text2reward').style.opacity = "0";
-                  }
-                  text2reward_stop()
-              </script>
-            </td>
-
-            <td valign="top" width="75%">
-              <papertitle>		
-                Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning
-              </papertitle>
-              <br/>
-              Tianbao Xie*, <strong>Siheng Zhao*</strong>, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, Tao Yu
-              <br/>
-              <em>In submission</em>
-              <p><a href="https://arxiv.org/abs/2309.11489">[arxiv]</a> <a href="https://text-to-reward.github.io/">[project]</a></p>
-              <p></p>
-            </td>
-          </tr>
-
-          <!-- tiebot -->
-          <tr onmouseout="tiebot_stop()" onmouseover="tiebot_start()">
-						<td width="30%">
-              <div class="one">
-                <div class="two" id="tiebot">
-                  <img src="images/tiebot.png" style="width: 210px;" />
-                </div>
-                <img src="images/tiebot.png" style="width: 210px;" />
-              </div>
-              <script type="text/javascript">
-
-                function tiebot_start() {
-                  document.getElementById('tiebot').style.opacity = "1";
-                  }
-                  function tiebot_stop() {
-                  document.getElementById('tiebot').style.opacity = "0";
-                  }
-                  tiebot_stop()
-              </script>
-            </td>
-
-            <td valign="top" width="75%">
-              <papertitle>		
-                TieBot: Model-based Learning to Knot a Tie from Visual Demonstration via Differentiable Physics-based Simulation
-              </papertitle>
-              <br/>
-              Weikun Peng, Jun Lv, Haonan Chen, <strong>Siheng Zhao</strong>, Jichen Sun, Cewu Lu, Lin Shao
-              <br/>
-              <em>In submission: International Conference on Robotics and Automation (<strong>ICRA</strong>) 2024</em>
-              <p><a href="https://sites.google.com/view/tiebot">[arxiv]</a> <a href="https://sites.google.com/view/tiebot">[project]</a> <a href="https://sites.google.com/view/tiebot">[video]</a></p>
-              <p></p>
-            </td>
-          </tr>
-          
-          <!-- diffAI -->
-          <tr onmouseout="diffai_stop()" onmouseover="diffai_start()">
-						<td width="30%">
-              <div class="one">
-                <div class="two" id="diffai">
+                <script type="text/javascript">
+  
+                  function text2reward_start() {
+                    document.getElementById('text2reward').style.opacity = "1";
+                    }
+                    function text2reward_stop() {
+                    document.getElementById('text2reward').style.opacity = "0";
+                    }
+                    text2reward_stop()
+                </script>
+              </td>
+  
+              <td valign="top" width="75%">
+                <papertitle>		
+                  Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning
+                </papertitle>
+                <br/>
+                Tianbao Xie*, <strong>Siheng Zhao*</strong>, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, Tao Yu
+                <br/>
+                <em>In submission</em>
+                <p><a href="https://arxiv.org/abs/2309.11489">[arxiv]</a> <a href="https://text-to-reward.github.io/">[project]</a></p>
+                <p></p>
+              </td>
+            </tr>
+            
+            <!-- diffAI -->
+            <tr onmouseout="diffai_stop()" onmouseover="diffai_start()">
+              <td width="30%">
+                <div class="one">
+                  <div class="two" id="diffai">
+                    <img src="images/diffclothai.png" style="width: 210px;" />
+                  </div>
                   <img src="images/diffclothai.png" style="width: 210px;" />
                 </div>
-                <img src="images/diffclothai.png" style="width: 210px;" />
-              </div>
-              <script type="text/javascript">
-
-                function diffai_start() {
-                  document.getElementById('diffai').style.opacity = "1";
-                  }
-                  function diffai_stop() {
-                  document.getElementById('diffai').style.opacity = "0";
-                  }
-                  diffai_stop()
-              </script>
-            </td>
-
-            <td valign="top" width="75%">
-              <papertitle>		
-                DiffClothAI: Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Two-Way Coupling with Articulated Rigid Bodies
-              </papertitle>
-              <br/>
-              Xinyuan Yu*, <strong>Siheng Zhao*</strong>, Siyuan Luo, Gang Yang, Lin Shao
-              <br/>
-              <em>International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2023</em>
-              <p>
-                <a href="https://sites.google.com/view/diffsimcloth">[arxiv]</a> 
-                <a href="https://sites.google.com/view/diffsimcloth">[project]</a> 
-                <a href="https://sites.google.com/view/diffsimcloth">[video]</a></p>
-              <p></p>
-            </td>
-          </tr>
-
-        <!-- clothnet -->
-        <tr onmouseout="clothnet_stop()" onmouseover="clothnet_start()">
-						<td width="30%">
-						<div class="one">
-            <div class="two" id="clothnet"><img src="images/clothnet.gif" style="width: 210px;" /></div>
-            <img src="images/clothnet.jpg" style="width: 210px;" /></div>
-						<script type="text/javascript">
-
-              function clothnet_start() {
-                document.getElementById('clothnet').style.opacity = "1";
-                }
-                function clothnet_stop() {
-                document.getElementById('clothnet').style.opacity = "0";
-                }
-                clothnet_stop()
-       
-            </script></td>
-              <td valign="top" width="75%"><papertitle>	ClothesNet: An Information-Rich 3D Garment Model Repository with Simulated Clothes Environment</papertitle><br />
-              Bingyang Zhou, Haoyu Zhou, Tianhai Liang, Qiaojun Yu, <strong>Siheng Zhao</strong>, Yuwei Zeng, Jun Lv, Siyuan Luo, Qiancai Wang, Xinyuan Yu, Haonan Chen, Cewu Lu, Lin Shao<br />
-              <em>International Conference on Computer Vision (<strong>ICCV</strong>) 2023</em>
-              <p><a href="https://arxiv.org/abs/2308.09987">[arxiv]</a> <a href="https://sites.google.com/view/clothesnet">[project]</a> <a href="https://connecthkuhk-my.sharepoint.com/:u:/g/personal/byzhou_connect_hku_hk/EQjcxGjQ24dMno6r_Hpf0iIB4FeN_jzZNW14HqiRuBlOKw?e=ES1dBf">[dataset]</a></p>
-              <p></p>
+                <script type="text/javascript">
+  
+                  function diffai_start() {
+                    document.getElementById('diffai').style.opacity = "1";
+                    }
+                    function diffai_stop() {
+                    document.getElementById('diffai').style.opacity = "0";
+                    }
+                    diffai_stop()
+                </script>
               </td>
-        </tr>
-	
-          <!-- knn-box -->
-          <tr onmouseout="knnbox_stop()" onmouseover="knnbox_start()">
+  
+              <td valign="top" width="75%">
+                <papertitle>		
+                  DiffClothAI: Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Two-Way Coupling with Articulated Rigid Bodies
+                </papertitle>
+                <br/>
+                Xinyuan Yu*, <strong>Siheng Zhao*</strong>, Siyuan Luo, Gang Yang, Lin Shao
+                <br/>
+                <em>International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2023</em>
+                <p>
+                  <a href="https://sites.google.com/view/diffsimcloth">[arxiv]</a> 
+                  <a href="https://sites.google.com/view/diffsimcloth">[project]</a> 
+                  <a href="https://sites.google.com/view/diffsimcloth">[video]</a></p>
+                <p></p>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div id="full_publications" style="display: none;">
+        <table align="center" border="0" cellpadding="20" cellspacing="0" width="100%">
+        
+          <tbody>
+            <!-- text2reward -->
+            <tr onmouseout="text2reward_stop()" onmouseover="text2reward_start()">
+              <td width="30%">
+                <div class="one">
+                  <div class="two" id="text2reward">
+                    <img src="images/text2reward.png" style="width: 210px;" />
+                  </div>
+                  <img src="images/text2reward.png" style="width: 210px;" />
+                </div>
+                <script type="text/javascript">
+  
+                  function text2reward_start() {
+                    document.getElementById('text2reward').style.opacity = "1";
+                    }
+                    function text2reward_stop() {
+                    document.getElementById('text2reward').style.opacity = "0";
+                    }
+                    text2reward_stop()
+                </script>
+              </td>
+  
+              <td valign="top" width="75%">
+                <papertitle>		
+                  Text2Reward: Automated Dense Reward Function Generation for Reinforcement Learning
+                </papertitle>
+                <br/>
+                Tianbao Xie*, <strong>Siheng Zhao*</strong>, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, Tao Yu
+                <br/>
+                <em>In submission</em>
+                <p><a href="https://arxiv.org/abs/2309.11489">[arxiv]</a> <a href="https://text-to-reward.github.io/">[project]</a></p>
+                <p></p>
+              </td>
+            </tr>
+  
+            <!-- tiebot -->
+            <tr onmouseout="tiebot_stop()" onmouseover="tiebot_start()">
+              <td width="30%">
+                <div class="one">
+                  <div class="two" id="tiebot">
+                    <img src="images/tiebot.png" style="width: 210px;" />
+                  </div>
+                  <img src="images/tiebot.png" style="width: 210px;" />
+                </div>
+                <script type="text/javascript">
+  
+                  function tiebot_start() {
+                    document.getElementById('tiebot').style.opacity = "1";
+                    }
+                    function tiebot_stop() {
+                    document.getElementById('tiebot').style.opacity = "0";
+                    }
+                    tiebot_stop()
+                </script>
+              </td>
+  
+              <td valign="top" width="75%">
+                <papertitle>		
+                  TieBot: Model-based Learning to Knot a Tie from Visual Demonstration via Differentiable Physics-based Simulation
+                </papertitle>
+                <br/>
+                Weikun Peng, Jun Lv, Haonan Chen, <strong>Siheng Zhao</strong>, Jichen Sun, Cewu Lu, Lin Shao
+                <br/>
+                <em>In submission: International Conference on Robotics and Automation (<strong>ICRA</strong>) 2024</em>
+                <p><a href="https://sites.google.com/view/tiebot">[arxiv]</a> <a href="https://sites.google.com/view/tiebot">[project]</a> <a href="https://sites.google.com/view/tiebot">[video]</a></p>
+                <p></p>
+              </td>
+            </tr>
+            
+            <!-- diffAI -->
+            <tr onmouseout="diffai_stop()" onmouseover="diffai_start()">
+              <td width="30%">
+                <div class="one">
+                  <div class="two" id="diffai">
+                    <img src="images/diffclothai.png" style="width: 210px;" />
+                  </div>
+                  <img src="images/diffclothai.png" style="width: 210px;" />
+                </div>
+                <script type="text/javascript">
+  
+                  function diffai_start() {
+                    document.getElementById('diffai').style.opacity = "1";
+                    }
+                    function diffai_stop() {
+                    document.getElementById('diffai').style.opacity = "0";
+                    }
+                    diffai_stop()
+                </script>
+              </td>
+  
+              <td valign="top" width="75%">
+                <papertitle>		
+                  DiffClothAI: Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Two-Way Coupling with Articulated Rigid Bodies
+                </papertitle>
+                <br/>
+                Xinyuan Yu*, <strong>Siheng Zhao*</strong>, Siyuan Luo, Gang Yang, Lin Shao
+                <br/>
+                <em>International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2023</em>
+                <p>
+                  <a href="https://sites.google.com/view/diffsimcloth">[arxiv]</a> 
+                  <a href="https://sites.google.com/view/diffsimcloth">[project]</a> 
+                  <a href="https://sites.google.com/view/diffsimcloth">[video]</a></p>
+                <p></p>
+              </td>
+            </tr>
+  
+          <!-- clothnet -->
+          <tr onmouseout="clothnet_stop()" onmouseover="clothnet_start()">
               <td width="30%">
               <div class="one">
-              <div class="two" id="knnbox"><img src="images/knnbox.png" style="width: 210px;" /></div>
-              <img src="images/knnbox.png" style="width: 210px;" /></div>
+              <div class="two" id="clothnet"><img src="images/clothnet.gif" style="width: 210px;" /></div>
+              <img src="images/clothnet.jpg" style="width: 210px;" /></div>
               <script type="text/javascript">
-          function knnbox_start() {
-          document.getElementById('knnbox').style.opacity = "1";
+  
+                function clothnet_start() {
+                  document.getElementById('clothnet').style.opacity = "1";
+                  }
+                  function clothnet_stop() {
+                  document.getElementById('clothnet').style.opacity = "0";
+                  }
+                  clothnet_stop()
+         
+              </script></td>
+                <td valign="top" width="75%"><papertitle>	ClothesNet: An Information-Rich 3D Garment Model Repository with Simulated Clothes Environment</papertitle><br />
+                Bingyang Zhou, Haoyu Zhou, Tianhai Liang, Qiaojun Yu, <strong>Siheng Zhao</strong>, Yuwei Zeng, Jun Lv, Siyuan Luo, Qiancai Wang, Xinyuan Yu, Haonan Chen, Cewu Lu, Lin Shao<br />
+                <em>International Conference on Computer Vision (<strong>ICCV</strong>) 2023</em>
+                <p><a href="https://arxiv.org/abs/2308.09987">[arxiv]</a> <a href="https://sites.google.com/view/clothesnet">[project]</a> <a href="https://connecthkuhk-my.sharepoint.com/:u:/g/personal/byzhou_connect_hku_hk/EQjcxGjQ24dMno6r_Hpf0iIB4FeN_jzZNW14HqiRuBlOKw?e=ES1dBf">[dataset]</a></p>
+                <p></p>
+                </td>
+          </tr>
+    
+            <!-- knn-box -->
+            <tr onmouseout="knnbox_stop()" onmouseover="knnbox_start()">
+                <td width="30%">
+                <div class="one">
+                <div class="two" id="knnbox"><img src="images/knnbox.png" style="width: 210px;" /></div>
+                <img src="images/knnbox.png" style="width: 210px;" /></div>
+                <script type="text/javascript">
+            function knnbox_start() {
+            document.getElementById('knnbox').style.opacity = "1";
+            }
+            function knnbox_stop() {
+            document.getElementById('knnbox').style.opacity = "0";
+            }
+            knnbox_stop()
+            </script></td>
+                <td valign="top" width="75%"><papertitle>kNN-BOX: A Unified Framework for Nearest Neighbor Generation</papertitle><br />
+                  Wenhao Zhu*, Qianfeng Zhao*, Yunzhe Lv*, Shujian Huang, <strong>Siheng Zhao</strong>, Sizhe Liu, Jiajun Chen<br />
+                <em>arXiv 2302.13574</em>
+                <p><a href="https://arxiv.org/abs/2302.13574">[arxiv]</a> <a href="https://www.bilibili.com/video/BV19A411r77h/?spm_id_from=333.999.0.0">[video]</a>
+                  <iframe style="margin-left: 2px; margin-bottom:-5px;"
+                  frameborder="0" scrolling="0" width="91px" height="20px"
+                  src="https://ghbtns.com/github-btn.html?user=NJUNLP&repo=knn-box&type=star&count=true">
+                  </iframe>
+                </p>
+                <p></p>
+                </td>
+            </tr>		
+          </tbody>
+        </table>
+      </div>
+
+      <script>
+          function showFullPublications() {
+              var selectedPublicationsDiv = document.getElementById('selected_publications');
+              selectedPublicationsDiv.style.display = 'none';
+
+              var fullPublicationsDiv = document.getElementById('full_publications');
+              fullPublicationsDiv.style.display = 'block';
           }
-          function knnbox_stop() {
-          document.getElementById('knnbox').style.opacity = "0";
+
+          function showSelectedPublications() {
+              var fullPublicationsDiv = document.getElementById('full_publications');
+              fullPublicationsDiv.style.display = 'none';
+
+              var selectedPublicationsDiv = document.getElementById('selected_publications');
+              selectedPublicationsDiv.style.display = 'block';
           }
-          knnbox_stop()
-          </script></td>
-              <td valign="top" width="75%"><papertitle>kNN-BOX: A Unified Framework for Nearest Neighbor Generation</papertitle><br />
-                Wenhao Zhu*, Qianfeng Zhao*, Yunzhe Lv*, Shujian Huang, <strong>Siheng Zhao</strong>, Sizhe Liu, Jiajun Chen<br />
-              <em>arXiv 2302.13574</em>
-              <p><a href="https://arxiv.org/abs/2302.13574">[arxiv]</a> <a href="https://www.bilibili.com/video/BV19A411r77h/?spm_id_from=333.999.0.0">[video]</a>
-                <iframe style="margin-left: 2px; margin-bottom:-5px;"
-                frameborder="0" scrolling="0" width="91px" height="20px"
-                src="https://ghbtns.com/github-btn.html?user=NJUNLP&repo=knn-box&type=star&count=true">
-                </iframe>
-              </p>
-              <p></p>
-              </td>
-          </tr>		
-				</tbody>
-			</table>
+
+          function selectButton(buttonId) {
+              var button1 = document.getElementById('button1');
+              var button2 = document.getElementById('button2');
+          
+              if (buttonId === 'button1') {
+                button1.classList.add('selected-button');
+                button2.classList.remove('selected-button');
+              } else if (buttonId === 'button2') {
+                button1.classList.remove('selected-button');
+                button2.classList.add('selected-button');
+              }
+            }
+      </script>
+
 
       <table align="center" border="0" cellpadding="20" cellspacing="0" width="100%">
 				<tbody>
