@@ -23,22 +23,22 @@
               </p>
 
               <p style="text-align:justify">
-                I am a Senior student at the School of Artificial Intelligence, Nanjing University. Nowadays I work as Research Intern at Shanghai AI Lab with <a href="https://oceanpang.github.io/">Dr. Jiangmiao Pang</a>. This fall I'll join <a href="https://www.cs.usc.edu/">University of Southern California</a> as CS Ph.D. Student, advised by <a href="https://yuewang.xyz/">Prof. Yue Wang</a>.
+                I am a first-year CS Ph.D. Student at <a href="https://www.cs.usc.edu/">University of Southern California</a>, advised by <a href="https://yuewang.xyz/">Prof. Yue Wang</a>.
               </p>
               <p style="text-align:justify">
-                Previously, I was honoured to work with <a href="https://taoyds.github.io/">Prof. Tao Yu</a> and <a href="https://linsats.github.io/">Prof. Lin Shao</a> at <a href="https://hkunlp.github.io/">HKU NLP Group</a> and National University of Singapore.
+                Previously, I was honoured to work with <a href="https://taoyds.github.io/">Prof. Tao Yu</a>, <a href="https://linsats.github.io/">Prof. Lin Shao</a>, and <a href="https://oceanpang.github.io/">Dr. Jiangmiao Pang</a> at The University of Hong Kong, National University of Singapore, and Shanghai AI Lab.
               </p>
 
               <p style="text-align:center">
                 <a href="mailto:zhaosh@smail.nju.edu.cn">Email</a> &nbsp;/&nbsp; 
-              <a href="https://scholar.google.com/citations?user=l7EAauYAAAAJ&hl=zh-CN&oi=ao"> Google Scholar </a> &nbsp;/&nbsp;
+              <a href="https://scholar.google.com/citations?user=l7EAauYAAAAJ"> Google Scholar </a> &nbsp;/&nbsp;
               <a href="https://www.semanticscholar.org/author/Siheng-Zhao/2243033718"> Semantic Scholar </a> &nbsp;/&nbsp;
-              <a href="https://github.com/Hilbert-Johnson"> Github </a> &nbsp;/&nbsp;
+              <a href="https://github.com/sihengz02"> Github </a> &nbsp;/&nbsp;
               <a href="https://twitter.com/SihengZhao"> Twitter </a>
               </p>
             </td>
             <td style="padding:2.5%;width:31.5%;max-width:40%;vertical-align:top">
-              <img style="width:110%;max-width:110%;margin-top:2.5em;border-radius:15px" alt="profile photo" src="images/zhaosh.jpg" class="hoverZoomLink">
+              <img style="width:110%;max-width:110%;margin-top:2.5em;border-radius:15px" alt="profile photo" src="images/zhaosh.png" class="hoverZoomLink">
             </td>
           </tr>
         </tbody></table>
@@ -48,12 +48,10 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
-                <li>[Feb, 2024] Serve as Reviewer at ECCV 2024.</li>
                 <li>[Jan, 2024] One paper was accepted by EACL 2024.</li>
                 <li>[Jan, 2024] Two papers were accepted by ICLR 2024 as <b style="color: red; ">spotlight</b>.</li>
                 <li>[Dec, 2023] Awarded SenseTime Scholarship (30 undergraduates in the field of AI in China).</li>
                 <li>[Dec, 2023] Awarded Nanjing University Top-Grade Scholarship (highest honor in Nanjing University).</li>
-                <li>[Oct, 2023] Serve as Reviewer at ICRA 2024.</li>
                 <li>[July, 2023] One paper was accepted by ICCV 2023.</li>
                 <li>[June, 2023] One paper was accepted by IROS 2023.</li>
               </ul>
@@ -66,19 +64,17 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p style="text-align:justify;margin-bottom:0.0em">
-                My research interests now lie at the intersection of <font color="#FF8C00">Reinforcement Learning</font> and <font color="#FF8C00">Natural Language Processing</font>.
+                My research interests now lie at the intersection of <font color="#FF8C00">Embodied AI</font> and <font color="#FF8C00">Natural Language Processing</font>.
                 My long-term goal is to build the next generation of autonomous and intelligent agents that can proactively sense, plan, and interact with both the physical and digital world.
-              </p>
-              <p style="text-align:justify;margin-top:0.2em">
-                To achieve this goal, I primarily focus on the following topics:
-                <ul style="margin-top:-1em">
-                  <li>Developing efficient reasoning and learning algorithms for language-based agents.</li>
-                  <li>Advancing language-based agents for multimodal, unstructured and 3D-aware environments.</li>
-                  <li>Building robust agent benchmarks with executable environments and human-centric metrics.</li>
+                To achieve this goal, I primarily focus on:
+                <ul style="margin-top:0em">
+                  <li>Designing effective and efficient reasoning and learning algorithms for both physical and digital agents: <a href="https://text-to-reward.github.io/">Text2Reward</a></li>
+                  <li>Developing backbone models (e.g. LLMs, VLMs, World Models) for agents: <a href="https://arxiv.org/abs/2310.06830">Lemur</a></li>
+                  <li>Building robust agent benchmarks with executable environments and human-centric metrics: <a href="https://os-world.github.io/">OSWorld</a>, GRUtopia</li>
                 </ul>
               </p>
               <p style="text-align:justify;margin-top:-0.8em">
-                Specifically, I'm interested in the following areas: Embodied AI, Large Langauge Models & Vision-language Models, Code Generation.
+                Specifically, I'm interested in the following areas: Embodied AI, Vision-language Models, Language Agent.
               </p>
             </td>
           </tr>
@@ -108,231 +104,103 @@
         </style>
 
         <!-- Publications -->
-        <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <p>
-          &nbsp &nbsp &nbsp <button class="button selected-button" id="button1" onclick="showSelectedPublications(); selectButton('button1')"> Selected Papers</button> /
-          <button class="button" id="button2" onclick="showFullPublications(); selectButton('button2')">Full Papers by Year</button>
-        </p>
-
-        <div id="selected_publications">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-            
+        <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
             <tr>
-              <td style="padding-left:20px;padding-right:20px;padding-top:10px;width:30%;vertical-align:top">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/text2reward.png" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;width:70%;vertical-align:top;line-height:1.8em;padding-top:0px">
-                  <a href="https://arxiv.org/abs/2309.11489">
-                    <papertitle>Text2Reward: Dense Reward Generation with Language Models for Reinforcement Learning</papertitle>
-                  </a>
-                  <br>
-                  Tianbao Xie*, <strong>Siheng Zhao*</strong>, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, Tao Yu
-                  <br>
-                  <em>International Conference on Learning Representations (<strong>ICLR</strong>) 2024 <b style="color: red; ">Spotlight</b></em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2309.11489">[arxiv]</a> 
-                  <a href="https://text-to-reward.github.io/">[project]</a>
-                  <iframe style="margin-left: 2px; margin-bottom:-5px;"
-                  frameborder="0" scrolling="0" width="91px" height="20px"
-                  src="https://ghbtns.com/github-btn.html?user=xlang-ai&repo=text2reward&type=star&count=true">
-                  </iframe>
-                  <p></p>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Selected Publications</heading>
               </td>
             </tr>
-            <tr>
-              <td style="padding-left:20px;padding-right:20px;padding-top:20px;width:30%;vertical-align:top">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/diffclothai.png" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;padding-top:0px;width:70%;vertical-align:top;line-height:1.8em">
-                  <a href="https://ieeexplore.ieee.org/document/10341573">
-                    <papertitle>Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Two-Way Coupling with Articulated Rigid Bodies</papertitle>
-                  </a>
-                  <br>
-                  Xinyuan Yu*, <strong>Siheng Zhao*</strong>, Siyuan Luo, Gang Yang, Lin Shao
-                  <br>
-                  <em>International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2023</em>
-                  <br>
-                    <a href="https://ieeexplore.ieee.org/document/10341573">[paper]</a> 
-                    <a href="https://sites.google.com/view/diffsimcloth">[project]</a> 
-                    <a href="https://drive.google.com/file/d/1vIdi2b6tYUua1NKVkBfS0V63X7wf-3c7/view">[video]</a>
-                  <p></p>
-              </td>
-            </tr>
-
-          </table>
-        </div>
-
-        <div id="full_publications" style="display: none;">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-            <tr>
-              <td style="padding-left:20px;padding-right:20px;padding-top:10px;width:30%;vertical-align:top">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/text2reward.png" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;width:70%;vertical-align:top;line-height:1.8em;padding-top:0px">
-                  <a href="https://arxiv.org/abs/2309.11489">
-                    <papertitle>Text2Reward: Dense Reward Generation with Language Models for Reinforcement Learning</papertitle>
-                  </a>
-                  <br>
-                  Tianbao Xie*, <strong>Siheng Zhao*</strong>, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, Tao Yu
-                  <br>
-                  <em>International Conference on Learning Representations (<strong>ICLR</strong>) 2024 <b style="color: red; ">Spotlight</b></em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2309.11489">[arxiv]</a> 
-                  <a href="https://text-to-reward.github.io/">[project]</a>
-                  <iframe style="margin-left: 2px; margin-bottom:-5px;"
-                  frameborder="0" scrolling="0" width="91px" height="20px"
-                  src="https://ghbtns.com/github-btn.html?user=xlang-ai&repo=text2reward&type=star&count=true">
-                  </iframe>
-                  <p></p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding-left:20px;padding-right:20px;padding-top:10px;width:30%;vertical-align:top">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/lemur.jpeg" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;width:70%;vertical-align:top;line-height:1.8em;padding-top:0px">
-                  <a href="https://arxiv.org/abs/2310.06830">
-                    <papertitle>Lemur: Harmonizing Natural Language and Code for Language Agents</papertitle>
-                  </a>
-                  <br>
-                  Yiheng Xu*, Hongjin Su*, Chen Xing*, Boyu Mi, Qian Liu, Weijia Shi, Binyuan Hui, Fan Zhou, Yitao Liu, Tianbao Xie, Zhoujun Cheng, <strong>Siheng Zhao</strong>, Lingpeng Kong, Bailin Wang, Caiming Xiong, Tao Yu
-                  <br>
-                  <em>International Conference on Learning Representations (<strong>ICLR</strong>) 2024 <b style="color: red; ">Spotlight</b></em>
-                  <br>
-                    <a href="https://arxiv.org/abs/2310.06830">[arxiv]</a> 
-                    <a href="https://huggingface.co/OpenLemur">[model 🤗]</a>
-                    <iframe style="margin-left: 2px; margin-bottom:-5px;"
-                      frameborder="0" scrolling="0" width="91px" height="20px"
-                      src="https://ghbtns.com/github-btn.html?user=OpenLemur&repo=Lemur&type=star&count=true">
-                      </iframe>
-                  <p></p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding-left:20px;padding-right:20px;padding-top:10px;width:30%;vertical-align:top">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/tiebot.png" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;width:70%;vertical-align:top;line-height:1.8em;padding-top:0px">
-                  <a href="https://sites.google.com/view/tiebot">
-                    <papertitle>TieBot: Model-based Learning to Knot a Tie from Visual Demonstration via Differentiable Physics-based Simulation</papertitle>
-                  </a>
-                  <br>
-                  Weikun Peng, Jun Lv, Haonan Chen, <strong>Siheng Zhao</strong>, Jichen Sun, Cewu Lu, Lin Shao
-                  <br>
-                  <em>In submission, 2024</em>
-                  <br>
-                  <a href="https://sites.google.com/view/tiebot">[paper]</a> 
-                  <a href="https://sites.google.com/view/tiebot">[project]</a> 
-                  <a href="https://drive.google.com/file/d/1BxUjfo8ZQWMJiDRUKS34_zKaIcVWgBjl/view">[video]</a>
-                  <p></p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding-left:20px;padding-right:20px;padding-top:20px;width:30%;vertical-align:top">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/diffclothai.png" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;padding-top:0px;width:70%;vertical-align:top;line-height:1.8em">
-                  <a href="https://ieeexplore.ieee.org/document/10341573">
-                    <papertitle>Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Two-Way Coupling with Articulated Rigid Bodies</papertitle>
-                  </a>
-                  <br>
-                  Xinyuan Yu*, <strong>Siheng Zhao*</strong>, Siyuan Luo, Gang Yang, Lin Shao
-                  <br>
-                  <em>International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2023</em>
-                  <br>
-                    <a href="https://ieeexplore.ieee.org/document/10341573">[paper]</a> 
-                    <a href="https://sites.google.com/view/diffsimcloth">[project]</a> 
-                    <a href="https://drive.google.com/file/d/1vIdi2b6tYUua1NKVkBfS0V63X7wf-3c7/view">[video]</a>
-                  <p></p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding-left:20px;padding-right:20px;padding-top:20px;width:30%;vertical-align:top">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/clothnet.gif" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;padding-top:0px;width:70%;vertical-align:top;line-height:1.8em">
-                  <a href="https://arxiv.org/abs/2308.09987">
-                    <papertitle>ClothesNet: An Information-Rich 3D Garment Model Repository with Simulated Clothes Environment</papertitle>
-                  </a>
-                  <br>
-                  Bingyang Zhou, Haoyu Zhou, Tianhai Liang, Qiaojun Yu, <strong>Siheng Zhao</strong>, Yuwei Zeng, Jun Lv, Siyuan Luo, Qiancai Wang, Xinyuan Yu, Haonan Chen, Cewu Lu, Lin Shao
-                  <br>
-                  <em>International Conference on Computer Vision (<strong>ICCV</strong>) 2023</em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2308.09987">[arxiv]</a> 
-                  <a href="https://sites.google.com/view/clothesnet">[project]</a> 
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdE-cUxWSzvC-D99RqkIHI9yLHjvT_5QygszjfqxnB6vIt8vw/viewform">[dataset]</a>
-                  <p></p>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding-left:20px;padding-right:20px;padding-top:20px;width:30%;vertical-align:top">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/knnbox.png" class="hoverZoomLink">
-              </td>
-              <td style="padding:20px;padding-top:0px;width:70%;vertical-align:top;line-height:1.8em">
-                  <a href="https://arxiv.org/abs/2302.13574">
-                    <papertitle>kNN-BOX: A Unified Framework for Nearest Neighbor Generation</papertitle>
-                  </a>
-                  <br>
-                  Wenhao Zhu*, Qianfeng Zhao*, Yunzhe Lv*, Shujian Huang, <strong>Siheng Zhao</strong>, Sizhe Liu, Jiajun Chen
-                  <br>
-                  <em>European Chapter of the Association for Computational Linguistics (<strong>EACL</strong>) 2024 Demo</em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2302.13574">[arxiv]</a> 
-                  <a href="https://www.bilibili.com/video/BV19A411r77h/?spm_id_from=333.999.0.0">[中文视频]</a>
-                  <iframe style="margin-left: 2px; margin-bottom:-5px;"
-                  frameborder="0" scrolling="0" width="91px" height="20px"
-                  src="https://ghbtns.com/github-btn.html?user=NJUNLP&repo=knn-box&type=star&count=true">
-                  </iframe>
-                  <p></p>
-              </td>
-            </tr>
-
-          </table>
-        </div>
-
-        <script>
-          function showFullPublications() {
-              var selectedPublicationsDiv = document.getElementById('selected_publications');
-              selectedPublicationsDiv.style.display = 'none';
-
-              var fullPublicationsDiv = document.getElementById('full_publications');
-              fullPublicationsDiv.style.display = 'block';
-          }
-
-          function showSelectedPublications() {
-              var fullPublicationsDiv = document.getElementById('full_publications');
-              fullPublicationsDiv.style.display = 'none';
-
-              var selectedPublicationsDiv = document.getElementById('selected_publications');
-              selectedPublicationsDiv.style.display = 'block';
-          }
-
-          function selectButton(buttonId) {
-              var button1 = document.getElementById('button1');
-              var button2 = document.getElementById('button2');
+          </tbody>
           
-              if (buttonId === 'button1') {
-                button1.classList.add('selected-button');
-                button2.classList.remove('selected-button');
-              } else if (buttonId === 'button2') {
-                button1.classList.remove('selected-button');
-                button2.classList.add('selected-button');
-              }
-            }
-      </script>
+        </table>
+
+        <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <p style="text-align:justify;margin-bottom:0.0em">
+                  * denotes equal contribution.
+                  For the full publication list, please refer to my <a href="https://scholar.google.com/citations?user=l7EAauYAAAAJ"> Google Scholar </a>.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+          
+        </table>
+
+        
+
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
+            <tr>
+              <td style="padding-left:20px;padding-right:20px;padding-top:10px;width:30%;vertical-align:top">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/osworld.png" class="hoverZoomLink">
+              </td>
+              <td style="padding:20px;width:70%;vertical-align:top;line-height:1.8em;padding-top:0px">
+                  <a href="https://arxiv.org/abs/2404.07972">
+                    <papertitle>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments</papertitle>
+                  </a>
+                  <br>
+                  Tianbao Xie, Danyang Zhang, Jixuan Chen, Xiaochuan Li, <strong>Siheng Zhao</strong>, Ruisheng Cao, Toh Jing Hua, Zhoujun Cheng, Dongchan Shin, Fangyu Lei, Yitao Liu, Yiheng Xu, Shuyan Zhou, Silvio Savarese, Caiming Xiong, Victor Zhong, Tao Yu
+                  <br>
+                  <em>arXiv, 2024</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2404.07972">[arxiv]</a> 
+                  <a href="https://os-world.github.io/">[project]</a>
+                  <iframe style="margin-left: 2px; margin-bottom:-5px;"
+                  frameborder="0" scrolling="0" width="91px" height="20px"
+                  src="https://ghbtns.com/github-btn.html?user=xlang-ai&repo=OSWorld&type=star&count=true">
+                  </iframe>
+                  <p></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-left:20px;padding-right:20px;padding-top:10px;width:30%;vertical-align:top">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/text2reward.png" class="hoverZoomLink">
+              </td>
+              <td style="padding:20px;width:70%;vertical-align:top;line-height:1.8em;padding-top:0px">
+                  <a href="https://arxiv.org/abs/2309.11489">
+                    <papertitle>Text2Reward: Dense Reward Generation with Language Models for Reinforcement Learning</papertitle>
+                  </a>
+                  <br>
+                  <strong>Siheng Zhao*</strong>, Tianbao Xie*, Chen Henry Wu, Yitao Liu, Qian Luo, Victor Zhong, Yanchao Yang, Tao Yu
+                  <br>
+                  <em>International Conference on Learning Representations (<strong>ICLR</strong>) 2024 <b style="color: red; ">Spotlight</b></em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2309.11489">[arxiv]</a> 
+                  <a href="https://text-to-reward.github.io/">[project]</a>
+                  <iframe style="margin-left: 2px; margin-bottom:-5px;"
+                  frameborder="0" scrolling="0" width="91px" height="20px"
+                  src="https://ghbtns.com/github-btn.html?user=xlang-ai&repo=text2reward&type=star&count=true">
+                  </iframe>
+                  <p></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-left:20px;padding-right:20px;padding-top:20px;width:30%;vertical-align:top">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/diffclothai.png" class="hoverZoomLink">
+              </td>
+              <td style="padding:20px;padding-top:0px;width:70%;vertical-align:top;line-height:1.8em">
+                  <a href="https://ieeexplore.ieee.org/document/10341573">
+                    <papertitle>Differentiable Cloth Simulation with Intersection-free Frictional Contact and Differentiable Two-Way Coupling with Articulated Rigid Bodies</papertitle>
+                  </a>
+                  <br>
+                  <strong>Siheng Zhao*</strong>, Xinyuan Yu*, Siyuan Luo, Gang Yang, Lin Shao
+                  <br>
+                  <em>International Conference on Intelligent Robots and Systems (<strong>IROS</strong>) 2023</em>
+                  <br>
+                    <a href="https://ieeexplore.ieee.org/document/10341573">[paper]</a> 
+                    <a href="https://sites.google.com/view/diffsimcloth">[project]</a> 
+                    <a href="https://drive.google.com/file/d/1vIdi2b6tYUua1NKVkBfS0V63X7wf-3c7/view">[video]</a>
+                  <p></p>
+              </td>
+            </tr>
+
+          </table>
+
 
         <!-- Education -->
         <table id="education" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -346,6 +214,23 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:center;text-align:center">
+            <img style="width:70%;max-width:70%" alt="USC logo" src="images/usc.png" class="hoverZoomLink">
+            </td>
+            <td style="padding:20px;width:70%;vertical-align:center;line-height:1.8em">
+                <a href="https://www.usc.edu/">
+                  <papertitle>University of Southern California</papertitle>
+                </a>
+                <br>
+                Ph.D. in Computer Science (2024 - )
+                <br>
+                Advisor: <a href="https://yuewang.xyz/">Prof. Yue Wang</a>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:center;text-align:center">
             <img style="width:70%;max-width:70%" alt="NJU logo" src="images/nju.jpeg" class="hoverZoomLink">
             </td>
             <td style="padding:20px;width:70%;vertical-align:center;line-height:1.8em">
@@ -355,7 +240,7 @@
                 <br>
                 B.Eng. in Artificial Intelligence (2020 - 2024)
                 <br>
-                Overall GPA: 94.6/100, Ranking: 1/97
+                Overall GPA: 94.4/100, Ranking: 1/97
             </td>
           </tr>
         </table>
@@ -363,14 +248,14 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;padding-top:0px;width:30%;vertical-align:center;text-align:center">
-            <img style="width:80%;max-width:80%" alt="NUS logo" src="images/nus.jpeg" class="hoverZoomLink">
+            <img style="width:70%;max-width:70%" alt="NUS logo" src="images/nus.jpeg" class="hoverZoomLink">
             </td>
             <td style="padding:20px;padding-top:0px;width:70%;vertical-align:center;line-height:1.8em">
                 <a href="https://nus.edu.sg/">
                   <papertitle>National University of Singapore</papertitle>
                 </a>
                 <br>
-                Fully-funded Exchange in Computer Science (2023)
+                Exchange in Computer Science (2023)
                 <br>
                 Overall GPA: 4.0/4.0
             </td>
@@ -399,7 +284,7 @@
                 <br>
                 Research Intern (2024)
                 <br>
-                Shanghai, China
+                Advisor: <a href="https://oceanpang.github.io/">Dr. Jiangmiao Pang</a>
             </td>
           </tr>
         </table>
@@ -411,12 +296,12 @@
             </td>
             <td style="padding:20px;padding-top:0px;width:70%;vertical-align:center;line-height:1.8em">
                 <a href="https://hkunlp.github.io/">
-                  <papertitle>University of Hong Kong, NLP Group</papertitle>
+                  <papertitle>The University of Hong Kong, NLP Group</papertitle>
                 </a>
                 <br>
                 Research Assistant (2023)
                 <br>
-                Hong Kong
+                Advisor: <a href="https://taoyds.github.io/">Prof. Tao Yu</a>
             </td>
           </tr>
         </table>
@@ -429,8 +314,9 @@
             <ul style="padding-top:10px">
               <li style="padding-top:5px"> Conference Reviewer: 
                 <ul>
-                  <li> IEEE International Conference on Robotics and Automation (ICRA) 2024</li>
+                  <li> Conference on Neural Information Processing Systems (NeurIPS) 2024</li>
                   <li> European Conference on Computer Vision (ECCV) 2024</li>
+                  <li> IEEE International Conference on Robotics and Automation (ICRA) 2024</li>
                 </ul>
               </li>
               <li style="padding-top:5px"> Journal Reviewer: 
@@ -447,8 +333,10 @@
         <td style="padding:20px;width:100%;vertical-align:middle">
           <heading>Talks</heading>
           <ul style="padding-top:10px">
-            <li style="padding-top:5px"> <em>Dense Reward Generation with Language Models for Reinforcement Learning</em>, <a href="https://www.shlab.org.cn/">Shanghai AI Lab</a>, Oct. 2023</li>
-            <li style="padding-top:5px"> <em>Large Language Model for Robotics: a High-level Planner</em>, <a href="http://nlp.nju.edu.cn/homepage/">Nanjing University NLP Group</a>, Apr. 2023</li>
+            <li style="padding-top:5px"> <em>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments</em>, <a href="https://www.shlab.org.cn/">Shanghai AI Lab</a>, 2024</li>
+            <li style="padding-top:5px"> <em>Text2Reward: Reward Shaping with Language Models for Reinforcement Learning</em>, <a href="https://www.sensetime.com/en">SenseTime</a>, 2024</li>
+            <li style="padding-top:5px"> <em>Text2Reward: Reward Shaping with Language Models for Reinforcement Learning</em>, <a href="https://www.shlab.org.cn/">Shanghai AI Lab</a>, 2023, 2024</li>
+            <li style="padding-top:5px"> <em>Large Language Model for Robotics: a High-level Planner</em>, <a href="http://nlp.nju.edu.cn/homepage/">Nanjing University NLP Group</a>, 2023</li>
           </ul>
         </td>
       </tr>
@@ -460,6 +348,9 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>Honors & Awards</heading>
             <ul style="padding-top:10px">
+              <li style="padding-top:5px"> Outstanding Graduate of Nanjing University, 2024</li>
+              <li style="padding-top:5px"> Travel Award of the International Conference on Learning Representations, 2024</li>
+              <li style="padding-top:5px"> Jiangsu Province Study Abroad Scholarship, 2024</li>
               <li style="padding-top:5px"> <span style="background: #d6eef8;">SenseTime Scholarship</span>, 2023, awarded to 30 undergraduates in the field of AI in China</li>
               <li style="padding-top:5px"> <span style="background: #d6eef8;">Nanjing University Top-Grade Scholarship</span>, 2023, the highest honor in Nanjing University</li>
               <li style="padding-top:5px"> Bao Gang Scholarship & Special Prize Nomination, 2023</li>
