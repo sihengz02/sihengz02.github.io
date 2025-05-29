@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Learning from Any Images</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/png" href="franka.png">
+</head>
+<body>
+
+<div class="full-page-image">
+    <video id="bg-video" autoplay loop muted playsinline>
+        <source src="assets/videos/full_screen.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="content" style="padding: 0 20px">
+        <h1>
+            <span style="color:#C55A11;">R</span><span style="color:#FFC000;">o</span><span style="color:#70AD47;">L</span><span style="color:#5B9BD5;">A</span>: Robot Learning from Any Images
+        </h1>
+        <p>A framework that transforms <span style="background: linear-gradient(to right, #0150ff 0%, #EC5FA1 100%); -webkit-text-fill-color: transparent; -webkit-background-clip: text">any in-the-wild image</span> into an interactive, physics-enabled robotic environment.</p>
+    </div>
+</div>
+
+<div id="title_slide">
+
+    <div class="title_left">
+
+        <div class="allegrofail">
+            <div class="video_container">
+                <video loop autoplay playsinline controls preload="metadata">
+                    <source src="assets/videos/demo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <h1>Robot Learning from Any Images</h1>
+        <br>
+
+        <div id="abstract">
+            <h1>Abstract</h1>
+            <p>
+                We introduce RoLA, a framework that transforms any in-the-wild image into an interactive, physics-enabled robotic environment. 
+                Unlike previous methods, RoLA operates directly on a single image without requiring additional hardware or digital assets. 
+                Our framework democratizes robotic data generation by producing massive visuomotor robotic demonstrations within minutes from a wide range of image sources, including camera captures, robotic datasets, and Internet images. 
+                At its core, our approach combines a novel method for single-view physical scene recovery with an efficient visual blending strategy for photorealistic data collection. 
+                We demonstrate RoLA's versatility across applications like scalable robotic data generation and augmentation, robot learning from Internet images, and single-image real-to-sim-to-real systems for manipulators and humanoids.
+            </p>
+        </div>
+
+        <div class="allegrofail">
+            <div class="video_container">
+                <video loop autoplay muted playsinline preload="metadata">
+                    <source src="assets/videos/method.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="rounded">
+<div id="overview">
+    <h1 style="margin-top: -10px; margin-bottom: 30px;">Any Image Sources</h1>
+  
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+      <div style="white-space: nowrap;">Robotic<br>Dataset</div>
+  
+      <div>
+        <video autoplay muted playsinline loop preload="metadata" width="300">
+          <source src="assets/videos/image_source/robo_1.mp4" type="video/mp4">
+        </video>
+      </div>
+  
+      <div>
+        <video autoplay muted playsinline loop preload="metadata" width="300">
+          <source src="assets/videos/image_source/robo_2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <div style="white-space: nowrap;">Camera<br>Capture</div>
+    
+        <div>
+          <video autoplay muted playsinline loop preload="metadata" width="300">
+            <source src="assets/videos/image_source/camera_1.mp4" type="video/mp4">
+          </video>
+        </div>
+    
+        <div>
+          <video autoplay muted playsinline loop preload="metadata" width="300">
+            <source src="assets/videos/image_source/camera_2.mp4" type="video/mp4">
+          </video>
+        </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <div style="white-space: nowrap;">Internet<br>Images</div>
+    
+        <div>
+          <video autoplay muted playsinline loop preload="metadata" width="300">
+            <source src="assets/videos/image_source/internet_1.mp4" type="video/mp4">
+          </video>
+        </div>
+    
+        <div>
+          <video autoplay muted playsinline loop preload="metadata" width="300">
+            <source src="assets/videos/image_source/internet_2.mp4" type="video/mp4">
+          </video>
+        </div>
+    </div>
+
+    <h1 style="margin-top: -10px; margin-bottom: 30px;">Single-Image Imitation Learning</h1>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <div style="white-space: nowrap;">Manipulation in<br>Clutted Scenes</div>
+    
+        <div>
+            <div style="font-weight: bold; margin-bottom: 8px;">RoLA-Generated Data @ Sim</div>
+          <video autoplay muted playsinline loop preload="metadata" width="300">
+            <source src="assets/videos/il/1_sim.mp4" type="video/mp4">
+          </video>
+        </div>
+    
+        <div>
+            <div style="font-weight: bold; margin-bottom: 8px;">Real-world Deploy</div>
+          <video autoplay muted playsinline loop preload="metadata" width="300">
+            <source src="assets/videos/il/1_real.mp4" type="video/mp4">
+          </video>
+        </div>
+    </div>
+
+    <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+        <div style="white-space: nowrap;">Pour SodaWater</div>
+    
+        <div>
+          <video autoplay muted playsinline loop preload="metadata" width="300">
+            <source src="assets/videos/il/2_sim.mp4" type="video/mp4">
+          </video>
+        </div>
+    
+        <div>
+          <video autoplay muted playsinline loop preload="metadata" width="300">
+            <source src="assets/videos/il/2_real.mp4" type="video/mp4">
+          </video>
+        </div>
+    </div>
+
+    <h1 style="margin-top: -10px; margin-bottom: 30px;">Vision-Language-Action Models</h1>
+
+    <div class="allegrolower">
+        <div class="video_container" style="position: relative; display: inline-block;">
+            <div style="position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(255, 255, 255, 0.85);
+                padding: 2px 8px;
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 0px;">
+                Pick up the yellow banana.
+            </div>
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/videos/vla/pick_banana.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video_container" style="position: relative; display: inline-block;">
+            <div style="position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(255, 255, 255, 0.85);
+                padding: 2px 8px;
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 0px;">
+                Pick up the carrot.
+            </div>
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/videos/vla/pick_carrot.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="allegrolower">
+        <div class="video_container" style="position: relative; display: inline-block;">
+            <div style="position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(255, 255, 255, 0.85);
+                padding: 2px 8px;
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 0px;">
+                Put the yellow lemon beside the green apple.
+            </div>
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/videos/vla/pick_grey_object.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video_container" style="position: relative; display: inline-block;">
+            <div style="position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgba(255, 255, 255, 0.85);
+                padding: 2px 8px;
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 0px;">
+                Take the grey object beside the lemon and place it beside the yellow apple.
+            </div>
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/videos/vla/pick_lemon.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <h1 style="margin-top: -10px; margin-bottom: 30px;">Manipulation Prior from Internet Images</h1>
+
+    <div class="allegrofail">
+        <div class="video_container" style="text-align: center">
+            <video loop autoplay muted playsinline preload="metadata">
+                <source src="assets/videos/prior/prior.mp4" type="video/mp4">
+            </video>
+            <div class="caption" style="text-align: center">
+                <p>
+                    Using apple picking as an example, we collect diverse internet images containing apples to train an image-based grasping prior.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <p style="text-align: center; max-width: 800px; margin: 20px auto;">
+        We perform real-world evaluations on apples of varying colors, sizes, types, and positions.
+    </p>
+
+    
+    <div class="allegrolower">
+        <div class="video_container"">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/videos/prior/1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video_container"">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/videos/prior/2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="allegrolower">
+        <div class="video_container"">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/videos/prior/3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video_container"">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/videos/prior/4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="assets/js/full_screen_video.js"></script>
+<script src="assets/js/carousel.js"></script>
+</html>
